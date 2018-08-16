@@ -31,6 +31,8 @@ to install to non default location use --libdir
 for example 
 
     $ ./configure --libdir=/usr/local/lib/lua/5.1/ 
+Or
+    gcc -shared -fpic -ggdb -O0 -o bitstring.so -llua -lm lbitstring.c
 
 4.1 Installation from source on win32
 
